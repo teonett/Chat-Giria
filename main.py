@@ -77,7 +77,7 @@ openai_api_key = st.text_input(
 # +=========================================================+ #
 # | App Logic [Read, Interprete and Response]               | #
 # +=========================================================+ #
-if query_text is 'Other':
+if query_text == 'Other':
     query_text = st.text_input(
         'Enter your query:', placeholder='Enter query here ...', disabled=not uploaded_file)
 if not openai_api_key.startswith('sk-'):
